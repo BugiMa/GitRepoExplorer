@@ -6,4 +6,25 @@
     <string name="allegro">Allegro</string>
     <string name="organisation">Organisation</string>
     <string name="repo_type_icon">repo type icon</string>
+    <string name="other">Other</string>
+    <string name="github_page">GitHub page</string>
+    <string name="license_page">License page</string>
+    <string name="repository_details_label">Repository Details</string>
+    <string name="repository_list_label">Repository List</string>
+    <string name="language">Language</string>
+    <string name="description">Description</string>
+    <string name="issue_icon">open issues</string>
+    <string name="star_icon">stargazers</string>
+    <string name="watch_icon">watchers</string>
+    <string name="fork_icon">forks</string>
+    <string name="license">License</string>
+    <string name="owner">Owner</string>
+
+    <string name="creation_date">Creation: %1$s</string>
+    <string name="last_update_date">Last update: %1$s</string>
+    <string name="main_language">Main language: %1$s</string>
+    <string name="size">Size: %1$s</string>
+    <string name="topics">Topics</string>
+
+
 </resources>

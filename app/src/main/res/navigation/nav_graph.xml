@@ -7,7 +7,7 @@
     <fragment
         android:id="@+id/repoListFragment"
         android:name="com.example.gitrepoexplorer.ui.fragment.RepoListFragment"
-        android:label="fragment_repo_list"
+        android:label="@string/repository_list_label"
         tools:layout="@layout/fragment_repo_list" >
         <action
             android:id="@+id/action_repoListFragment_to_repoDetailsFragment"
@@ -16,6 +16,10 @@
     <fragment
         android:id="@+id/repoDetailsFragment"
         android:name="com.example.gitrepoexplorer.ui.fragment.RepoDetailsFragment"
-        android:label="fragment_repo_details"
-        tools:layout="@layout/fragment_repo_details" />
+        android:label="@string/repository_details_label"
+        tools:layout="@layout/fragment_repo_details" >
+        <argument
+            android:name="repo_index"
+            app:argType="integer" />
+    </fragment>
 </navigation>

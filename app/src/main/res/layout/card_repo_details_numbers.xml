@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="8dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/fork_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/watch_icon"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintHorizontal_chainStyle="spread_inside"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_round_fork_24"
+            android:contentDescription="@string/fork_icon" />
+
+        <TextView
+            android:id="@+id/forks_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:fontFamily="@font/roboto_slab"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="@+id/fork_icon"
+            app:layout_constraintStart_toEndOf="@+id/fork_icon"
+            app:layout_constraintTop_toTopOf="@+id/fork_icon" />
+
+        <ImageView
+            android:id="@+id/watch_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@+id/fork_icon"
+            app:layout_constraintEnd_toStartOf="@+id/star_icon"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/fork_icon"
+            app:layout_constraintTop_toTopOf="@+id/fork_icon"
+            app:srcCompat="@drawable/ic_round_eye_24"
+            android:contentDescription="@string/watch_icon" />
+
+        <TextView
+            android:id="@+id/watchers_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:fontFamily="@font/roboto_slab"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="@+id/watch_icon"
+            app:layout_constraintStart_toEndOf="@+id/watch_icon"
+            app:layout_constraintTop_toTopOf="@+id/watch_icon" />
+
+        <ImageView
+            android:id="@+id/star_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleX="1.2"
+            android:scaleY="1.2"
+            app:layout_constraintBottom_toBottomOf="@+id/watch_icon"
+            app:layout_constraintEnd_toStartOf="@+id/issue_icon"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/watch_icon"
+            app:layout_constraintTop_toTopOf="@+id/watch_icon"
+            app:srcCompat="@drawable/ic_round_star_outline_24"
+            android:contentDescription="@string/star_icon" />
+
+        <TextView
+            android:id="@+id/stargazers_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:fontFamily="@font/roboto_slab"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="@+id/star_icon"
+            app:layout_constraintStart_toEndOf="@+id/star_icon"
+            app:layout_constraintTop_toTopOf="@+id/star_icon" />
+
+        <ImageView
+            android:id="@+id/issue_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@+id/star_icon"
+            app:layout_constraintEnd_toStartOf="@+id/space"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/star_icon"
+            app:layout_constraintTop_toTopOf="@+id/star_icon"
+            app:srcCompat="@drawable/ic_round_open_issue_24"
+            android:contentDescription="@string/issue_icon" />
+
+        <TextView
+            android:id="@+id/open_issues_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:fontFamily="@font/roboto_slab"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="@+id/issue_icon"
+            app:layout_constraintStart_toEndOf="@+id/issue_icon"
+            app:layout_constraintTop_toTopOf="@+id/issue_icon" />
+
+        <Space
+            android:id="@+id/space"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="24dp"
+            app:layout_constraintBottom_toBottomOf="@+id/issue_icon"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/issue_icon"
+            app:layout_constraintTop_toTopOf="@+id/issue_icon" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

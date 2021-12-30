@@ -5,14 +5,24 @@
       <map>
         <entry key="..\:/Users/Mac/AndroidStudioProjects/GitRepoExplorer/app/src/main/res/drawable/ic_baseline_folder_24.xml" value="0.346875" />
         <entry key="..\:/Users/Mac/AndroidStudioProjects/GitRepoExplorer/app/src/main/res/drawable/ic_round_folder_24.xml" value="0.5240040858018387" />
+        <entry key="..\:/Users/Mac/AndroidStudioProjects/GitRepoExplorer/app/src/main/res/drawable/ic_round_fork_24.xml" value="0.34014300306435136" />
+        <entry key="..\:/Users/Mac/AndroidStudioProjects/GitRepoExplorer/app/src/main/res/drawable/ic_round_fork_32.xml" value="0.34014300306435136" />
         <entry key="..\:/Users/Mac/AndroidStudioProjects/GitRepoExplorer/app/src/main/res/drawable/ic_round_fork_right_24.xml" value="0.5240040858018387" />
+        <entry key="..\:/Users/Mac/AndroidStudioProjects/GitRepoExplorer/app/src/main/res/drawable/ic_round_open_issue_24.xml" value="0.5240040858018387" />
         <entry key="..\:/Users/Mac/AndroidStudioProjects/GitRepoExplorer/app/src/main/res/font/roboto_slab.xml" value="0.203125" />
         <entry key="..\:/Users/Mac/AndroidStudioProjects/GitRepoExplorer/app/src/main/res/layout/activity_main.xml" value="0.3223958333333333" />
+        <entry key="..\:/Users/Mac/AndroidStudioProjects/GitRepoExplorer/app/src/main/res/layout/card_repo_details_basic_info.xml" value="0.33" />
+        <entry key="..\:/Users/Mac/AndroidStudioProjects/GitRepoExplorer/app/src/main/res/layout/card_repo_details_license.xml" value="0.33" />
+        <entry key="..\:/Users/Mac/AndroidStudioProjects/GitRepoExplorer/app/src/main/res/layout/card_repo_details_numbers.xml" value="0.5" />
+        <entry key="..\:/Users/Mac/AndroidStudioProjects/GitRepoExplorer/app/src/main/res/layout/card_repo_details_other.xml" value="0.3265625" />
+        <entry key="..\:/Users/Mac/AndroidStudioProjects/GitRepoExplorer/app/src/main/res/layout/card_repo_details_owner.xml" value="0.33" />
+        <entry key="..\:/Users/Mac/AndroidStudioProjects/GitRepoExplorer/app/src/main/res/layout/card_repo_details_topics_description.xml" value="0.5" />
         <entry key="..\:/Users/Mac/AndroidStudioProjects/GitRepoExplorer/app/src/main/res/layout/content_main.xml" value="0.3223958333333333" />
-        <entry key="..\:/Users/Mac/AndroidStudioProjects/GitRepoExplorer/app/src/main/res/layout/fragment_repo_details.xml" value="0.3223958333333333" />
+        <entry key="..\:/Users/Mac/AndroidStudioProjects/GitRepoExplorer/app/src/main/res/layout/fragment_repo_details.xml" value="0.33" />
         <entry key="..\:/Users/Mac/AndroidStudioProjects/GitRepoExplorer/app/src/main/res/layout/fragment_repo_list.xml" value="0.22" />
         <entry key="..\:/Users/Mac/AndroidStudioProjects/GitRepoExplorer/app/src/main/res/layout/item_git_repo.xml" value="0.3265625" />
         <entry key="..\:/Users/Mac/AndroidStudioProjects/GitRepoExplorer/app/src/main/res/layout/item_repo.xml" value="0.33" />
+        <entry key="..\:/Users/Mac/AndroidStudioProjects/GitRepoExplorer/app/src/main/res/layout/language_stacked_bar_chart.xml" value="0.3265625" />
         <entry key="..\:/Users/Mac/AndroidStudioProjects/GitRepoExplorer/app/src/main/res/menu/menu_main.xml" value="0.3223958333333333" />
       </map>
     </option>

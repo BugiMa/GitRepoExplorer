@@ -39,6 +39,12 @@ class RepoListFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View {
         _binding = FragmentRepoListBinding.inflate(inflater, container, false)
+        return binding.root
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
         viewModel = ViewModelProvider(requireActivity()).get(SharedViewModel::class.java)
 
         val progressBar = binding.progressBar
@@ -65,10 +71,7 @@ class RepoListFragment : Fragment() {
                     if (lastVisiblePosition == recyclerView.adapter!!.itemCount - 1) {
                         if (viewModel.getLastLoadedReposCount() == REPOS_PER_PAGE_LIMIT) {
                             viewModel.loadRepos()
-                            Toast.makeText(requireActivity(),"Loading more repositories...", Toast.LENGTH_SHORT).show()
-                        } else {
-                            Toast.makeText(requireActivity(),"No more repositories to load.", Toast.LENGTH_SHORT).show()
-                        } // TODO: Tosty do naprawy
+                        }
                     }
                 }
             })
@@ -83,7 +86,7 @@ class RepoListFragment : Fragment() {
                             repoListAdapter.updateData(data)
                             Toast.makeText(requireActivity(),"Repositories loaded successfully!", Toast.LENGTH_SHORT).show()
                         } else {
-                            Toast.makeText(requireActivity(),"User has no repositories!", Toast.LENGTH_SHORT).show()
+                            Toast.makeText(requireActivity(),"User has no more repositories!", Toast.LENGTH_SHORT).show()
                         }
                     }
                 }
@@ -99,14 +102,6 @@ class RepoListFragment : Fragment() {
                 }
             }
         }
-
-        return binding.root
-    }
-
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        super.onViewCreated(view, savedInstanceState)
-
-
     }
 
     override fun onDestroyView() {

@@ -44,6 +44,10 @@ class SharedViewModel @Inject constructor(
         return loadedRepos
     }
 
+    fun getRepoByIndex(index: Int): GitRepos.GitRepoData {
+        return loadedRepos[index]
+    }
+
     fun getLastLoadedReposCount(): Int {
         return lastLoadedRepoCount
     }
